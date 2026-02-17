@@ -1,6 +1,6 @@
 <p><%= link_to "Back", products_path %></p>
 
-<section class="product">
+<section class="product flex">
   <%= image_tag @product.featured_image if @product.featured_image.attached? %>
 
   <section class="product-info">

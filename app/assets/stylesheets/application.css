@@ -118,4 +118,7 @@ section.settings nav a:hover {
   background: #eaf3ff;
 }
 
-
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
