@@ -59,14 +59,14 @@ main {
 section.product {
   display: flex;
   gap: 2rem;
-  flex-direction: row;
+  flex-wrap: wrap;
   margin-bottom: 2rem;
 }
 
 section.product img {
   border-radius: 12px;
   flex-basis: 30%;
-  max-width: 400px;
+  max-width: 300px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
@@ -118,7 +118,3 @@ section.settings nav a:hover {
   background: #eaf3ff;
 }
 
-.flex {
-  display: flex;
-  flex-wrap: wrap;
-}
