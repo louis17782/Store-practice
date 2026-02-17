@@ -13,14 +13,14 @@ default: &default
 
 development:
   <<: *default
-  database: storepractice_development
+  database: store_practice_development
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: storepractice_test
+  database: store_practice_test
 
 
 # Store production database in the storage/ directory, which by default
@@ -28,15 +28,15 @@ test:
 production:
   primary:
     <<: *default
-    database: storepractice_production
+    database: store_practice_production
     url: <%= ENV['DATABASE_URL'] %>
   cache:
     <<: *default
-    database: storepractice_production_cache
+    database: store_practice_production_cache
     migrations_paths: db/cache_migrate
   queue:
     <<: *default
-    database: storepractice_production_queue
+    database: store_practice_production_queue
     migrations_paths: db/queue_migrate
   cable:
     <<: *default
